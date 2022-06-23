@@ -100,7 +100,7 @@ fi
 
 imagefile=$( dialog "${opt[@]}" --output-fd 1 --inputbox "
 Image filename:
-" 0 0 rAudio-$version-$model-$revision.img.xz )
+" 0 0 Notremusique-rAudio-$version-$model-$revision.img.xz )
 
 imagedir=$( dialog "${optbox[@]}" --title 'Save to: ([space]=select)' --stdout --dselect $PWD/ 20 40 )
 imagepath="${imagedir%/}/$imagefile" # %/ - remove trailing /
